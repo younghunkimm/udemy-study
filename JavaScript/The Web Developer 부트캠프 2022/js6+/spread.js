@@ -50,3 +50,5 @@ const dataFromForm = {
   password: 'tobias123!',
   username: 'tfunke'
 }
+const newUser = { ...dataFromForm, id: 2345, isAdmin: false }
+console.log(newUser);
