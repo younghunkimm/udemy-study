@@ -93,3 +93,45 @@ function returnDay(day) {
 const square = number => {
     return number * number;
 }
+
+
+
+/**
+ * Exercise 45: 메서드 연습 달걀 낳기 연습
+ * 
+ * 1. area 는 한 변의 길이를 받은 다음 해당 변의 길이를 제곱한 값을 반환
+ * 2. perimeter 는 한 변의 길이를 받아 4를 곱한 값을 반환
+ */
+const square2 = {
+    area(width) {
+        return width * width;
+    },
+    perimeter(width) {
+        return width * 4;
+    }
+}
+
+
+
+/**
+ * Exercise 46: 달걀 낳기 연습
+ * 
+ * hen 이라는 이름의 오브젝트를 정의 후 세가지 속성을 갖는다.
+ * name 은 'Helen'
+ * eggCount 는 0
+ * layAnEgg 는 eggCount 의 값을 1씩 증가시키고 문자열 'EGG'를 반환
+ * this 를 사용
+ */
+const hen = {
+    name: 'Helen',
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return 'EGG';
+    }
+}
+console.log(hen.name); // "Helen"
+console.log(hen.eggCount); // 0
+console.log(hen.layAnEgg()); // "EGG"
+console.log(hen.layAnEgg()); // "EGG"
+console.log(hen.eggCount); // 2
