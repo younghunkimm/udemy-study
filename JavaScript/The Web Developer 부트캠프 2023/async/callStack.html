@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call stack</title>
+</head>
+<body>
+    <h1>call stack</h1>
+
+    <a href="http://latentflip.com/loupe" target="_blank">콜스택 시각화</a>
+    <pre style="background-color: #222; color: #fff; padding: 20px 10px;">
+function multiply(x, y){
+    return x * y;
+}
+
+function square (x) {
+    return multiply(x, x);
+}
+
+function isRightTriangle(a, b, c) {
+    return square(a) + square(b) === square(c)
+}
+
+isRightTriangle(3, 4, 5);</pre>
+    
+    <script src="callStack.js"></script>
+</body>
+</html>
