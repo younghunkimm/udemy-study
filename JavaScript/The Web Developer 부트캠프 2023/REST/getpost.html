@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get and Post</title>
+
+    <style>
+        table {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            color: tomato;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        tbody td {
+            color: #2a2a2a;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <h1>GET AND POST REQUESTS</h1>
@@ -22,5 +45,60 @@
         <input type="number" name="qty">
         <button>Submit</button>
     </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PATH</th>
+                <th>VERB</th>
+                <th>PURPOSE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Index</td>
+                <td>/comments</td>
+                <td>GET</td>
+                <td>Display all comments</td>
+            </tr>
+            <tr>
+                <td>New</td>
+                <td>/comments/new</td>
+                <td>GET</td>
+                <td>Form to create new comment</td>
+            </tr>
+            <tr>
+                <td>Create</td>
+                <td>/comments</td>
+                <td>POST</td>
+                <td>Creates new comment on server</td>
+            </tr>
+            <tr>
+                <td>Show</td>
+                <td>/comments/:id</td>
+                <td>GET</td>
+                <td>Details for one specific comment</td>
+            </tr>
+            <tr>
+                <td>Edit</td>
+                <td>/comments/:id/edit</td>
+                <td>GET</td>
+                <td>Form to edit specific comment</td>
+            </tr>
+            <tr>
+                <td>Update</td>
+                <td>/comments/:id</td>
+                <td>PATCH</td>
+                <td>Updates specific comment on server</td>
+            </tr>
+            <tr>
+                <td>Destroy</td>
+                <td>/comments/:id</td>
+                <td>DELETE</td>
+                <td>Delets specific item on server</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
